@@ -3,7 +3,7 @@
 ### Thanks for visiting my profile.
 
 - 🔭 I’m currently working on a few devops projects.
-- 🌱 I’m currently learning kubernetes, terraform and ansible. 
+- 🌱 I’m currently learning Kubernetes, Terraform and Ansible. 
 - 📫 How to reach me: chenalvin0907@gmail.com for job opportunities, questions or anything really!
 
 <!--
