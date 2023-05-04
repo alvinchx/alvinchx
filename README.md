@@ -1,5 +1,11 @@
 ### Hi there 👋
 
+### Thanks for visiting my profile.
+
+- 🔭 I’m currently working on a few devops projects.
+- 🌱 I’m currently learning kubernetes, terraform and ansible. 
+- 📫 How to reach me: chenalvin0907@gmail.com for job opportunities, questions or anything really!
+
 <!--
 **alvinchx/alvinchx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
