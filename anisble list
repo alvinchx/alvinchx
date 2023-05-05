@@ -1,0 +1,23 @@
+To use Ansible to retrieve a list of names and display it to the output, you can follow these steps:
+
+Create a YAML file with the list of names you want to retrieve. For example, you can create a file named names.yaml with the following content:
+
+markdown Copy code names:
+
+John
+Jane
+Michael
+Emily Create an Ansible playbook that reads the names.yaml file and displays the list of names to the output. For example, you can create a playbook named display_names.yml with the following content:
+yaml Copy code
+name: Display list of names hosts: localhost connection: local tasks:
+name: Read names from file include_vars: file: names.yaml
+
+name: Display list of names debug: var: names This playbook reads the names.yaml file using the include_vars module, and then displays the list of names to the output using the debug module.
+
+Run the Ansible playbook using the ansible-playbook command:
+
+Copy code ansible-playbook display_names.yml This will execute the playbook and display the list of names to the output.
+
+Alternatively, you can also use the ansible command to execute the debug task directly:
+
+css Copy code ansible localhost -m debug -a "var=names" -e "@names.yaml" This command reads the names.yaml file using the -e option and then displays the list of names to the output using the debug module.
