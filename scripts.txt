@@ -1,0 +1,5 @@
+Remove-GPRegistryValue -Name "GPOWinRMAllowBasic -Key "HKLM\Software\Policies\Microsoft\Windows\WinRM\Client!AllowBasic" -ValueName "AllowBasic" -ErrorAction SilentlyContinue
+
+Remove-GPRegistryValue -Name "GPOWinRMAllowUnencryptedTraffic -Key "HKLM\Software\Policies\Microsoft\Windows\WinRM\Client!AllowUnencryptedTraffic" -ValueName "AllowUnencryptedTraffic" -ErrorAction SilentlyContinue
+
+gpupdate /force
