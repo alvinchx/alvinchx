@@ -7,8 +7,8 @@ gpupdate /force
 
 
 # Remove the registry values
-Remove-ItemProperty -Path "Registry::$registryKeyPath" -Name "AllowBasic" -ErrorAction SilentlyContinue
-Remove-ItemProperty -Path "Registry::$registryKeyPath" -Name "AllowUnencryptedTraffic" -ErrorAction SilentlyContinue
+Remove-ItemProperty -Path "HKLM\Software\Policies\Microsoft\Windows\WinRM\Client!AllowBasic" -Name "AllowBasic" -ErrorAction SilentlyContinue
+Remove-ItemProperty -Path "HKLM\Software\Policies\Microsoft\Windows\WinRM\Client!AllowUnencryptedTraffic" -Name "AllowUnencryptedTraffic" -ErrorAction SilentlyContinue
 
 # Force a Group Policy update
 gpupdate /force
